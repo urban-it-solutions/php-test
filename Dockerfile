@@ -1,5 +1,5 @@
 FROM jboss-eap-7/eap71-openshift:latest 
-RUN mkdir blub
+#RUN mkdir blub
 COPY sample.war /tmp
 COPY test/* /tmp
 EXPOSE 8080
