@@ -1,4 +1,4 @@
-FROM jboss-eap-7/eap71-openshift:latest
+FROM centos:7
 USER root
 RUN localedef -i de_DE -f CP1252 de_DE.CP1252
 
