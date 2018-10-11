@@ -1,5 +1,5 @@
 FROM jboss-eap-7/eap71-openshift:latest
-RUN yum -y instal glibc
+USER root
 RUN localedef -i de_DE -f CP1252 de_DE.CP1252
 
 
