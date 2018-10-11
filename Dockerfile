@@ -1,4 +1,7 @@
-FROM jboss-eap-7/eap71-openshift:latest 
+FROM jboss-eap-7/eap71-openshift:latest
+RUN localedef -i de_DE -f CP1252 de_DE.CP1252
+
+
 RUN mkdir blub
 COPY sample.war /tmp
 COPY test/* /tmp
