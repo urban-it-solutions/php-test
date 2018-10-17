@@ -237,6 +237,7 @@ RUN apt-get update \
 #CMD ["start"]
 
 #CMD ["cron", "-f"]
+COPY files/ports.conf /etc/apache2/
 EXPOSE 8080
 
 CMD ["apache2-foreground"]
