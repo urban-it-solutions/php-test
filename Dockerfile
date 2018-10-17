@@ -237,7 +237,7 @@ RUN apt-get update \
 #CMD ["start"]
 
 #CMD ["cron", "-f"]
-RUN chmod g+rwx /var/run/apache2
+RUN chmod 777 /var/run/apache2
 COPY files/ports.conf /etc/apache2/
 EXPOSE 8080
 
